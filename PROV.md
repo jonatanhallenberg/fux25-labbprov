@@ -19,8 +19,9 @@ Du ska vara inloggad på GitHub i browsern, och `git push` ska fungera från ter
 
 ## Så får du provet
 
-1. Klockan 09:00 läggs en **GitHub Classroom-länk** i Canvas (uppgiften *Labbprov 15/10*). Klicka på den, godkänn, och du får ett eget privat repo `labbprov-<ditt användarnamn>`.
-2. Klona det, installera och kontrollera att appen startar:
+1. Klockan 09:00 öppnas mallrepot [**`fux25-labbprov`**](https://github.com/jonatanhallenberg/fux25-labbprov) (länken står också i Canvas-uppgiften *Labbprov 15/10*). Klicka **Use this template → Create a new repository**. Owner: ditt eget konto. Namn: `labbprov-<ditt användarnamn>`. Välj **Private** – inte Public. Samma knapp som i övningen, men privat.
+2. Ge mig läsrätt, annars kan jag inte rätta ditt prov: i ditt nya repo, **Settings → Collaborators → Add people** → `jonatanhallenberg` → *Add*. Det räcker att inbjudan syns där som *Pending* – jag accepterar den.
+3. Klona ditt repo, installera och kontrollera att appen startar:
 
 ```bash
 git clone <din repo-url> && cd labbprov-<användarnamn>
@@ -31,7 +32,7 @@ npm run dev        # appen på http://localhost:5173
 
 Logga in med `maja.lind@example.com` / `bok-maja`. Det finns ett konto till: `omar.haddad@example.com` / `bok-omar`.
 
-3. Kör rättningen en första gång, så ser du utgångsläget:
+4. Kör rättningen en första gång, så ser du utgångsläget:
 
 ```bash
 npm run prov
@@ -114,7 +115,8 @@ Verifiera själv: `npm run prov -- D`. `npm run test:run` ska fortfarande vara g
 
 ## Inlämning
 
-- Allt ska vara **pushat till `main` i ditt Classroom-repo senast 12:00.** Det som ligger där då är det som rättas; det spelar ingen roll hur många gånger du pushat innan.
+- Allt ska vara **pushat till `main` i ditt repo `labbprov-<användarnamn>` senast 12:00.** Det som ligger där då är det som rättas; det spelar ingen roll hur många gånger du pushat innan. Tiden räknas från när GitHub tog emot pushen, inte från tiden på dina commits.
+- Repot ska vara **privat**, och `jonatanhallenberg` ska vara inbjuden (steg 2 under *Så får du provet*).
 - Committa i små steg medan du jobbar (t.ex. en commit per lagat fel). Det är din historik jag tittar på när jag frågar vad du gjorde.
 - I Canvas: lämna in **länken till ditt repo** som text i uppgiften *Labbprov 15/10*. Det är allt.
 
@@ -131,6 +133,7 @@ Verifiera själv: `npm run prov -- D`. `npm run test:run` ska fortfarande vara g
 | Docker Desktop startar inte | Pusha – Actions bygger imagen åt dig. Säg till mig, så noterar jag det |
 | `npm run prov` säger att en check inte kunde köras | Läs raderna under: de visar slutet av testets utskrift. Oftast: API:t kraschar vid start (syntaxfel i `server.js` – kör `npm run api` och läs felet), eller en fil/funktion som rättningen letar efter är omdöpt |
 | GitHub Actions visar inget efter push | Vänta en minut, ladda om Actions-fliken. Kör `npm run prov` lokalt så länge |
+| Du råkade skapa repot som Public | Settings → General → längst ner *Change repository visibility* → Private. Säg till mig |
 | Något annat | Räck upp handen. Ligger felet utanför din dator (salens nät, GitHub nere) får du tiden tillbaka; Docker som inte startar löses via Actions och ger ingen extra tid |
 
 ## Du är klar när
