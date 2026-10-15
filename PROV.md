@@ -1,9 +1,9 @@
 # Labbprov · Lånekortet – laga fyra saker
-*Torsdag 15/10 2026 · 09:00–12:00 · sal 5 · individuellt · Kursmål 1, 3, 5 och 8*
+*Torsdag 15/10 2026 · 09:00–12:00 och 13:00–14:00 (lunch 12–13, salen låst) · sal 5 · individuellt · Kursmål 1, 3, 5 och 8*
 
 **Läs så här:** läs hela sidan en gång innan du börjar. Sedan jobbar du del för del i valfri ordning. Allt du behöver för varje del står under delen. Sist står när du är klar och hur inlämningen går till.
 
-Näsby bibliotek har fått en ny kundportal, *Lånekortet*, levererad av en byrå. Den fungerar på byråns dator. Men pipelinen har aldrig varit grön, containern väger 1,2 GB och svarar fel, API:t läcker andras lån, och startsidan tar sju sekunder på en mobil. Du tar över. På tre timmar ska du få de fyra sakerna att fungera, och kunna förklara vad du gjorde.
+Näsby bibliotek har fått en ny kundportal, *Lånekortet*, levererad av en byrå. Den fungerar på byråns dator. Men pipelinen har aldrig varit grön, containern väger 1,2 GB och svarar fel, API:t läcker andras lån, och startsidan tar sju sekunder på en mobil. Du tar över. På fyra timmar ska du få de fyra sakerna att fungera, och kunna förklara vad du gjorde.
 
 ## Före provet – kontrollera kvällen innan
 
@@ -115,7 +115,7 @@ Verifiera själv: `npm run prov -- D`. `npm run test:run` ska fortfarande vara g
 
 ## Inlämning
 
-- Allt ska vara **pushat till `main` i ditt repo `labbprov-<användarnamn>` senast 12:00.** Det som ligger där då är det som rättas; det spelar ingen roll hur många gånger du pushat innan. Tiden räknas från när GitHub tog emot pushen, inte från tiden på dina commits.
+- Allt ska vara **pushat till `main` i ditt repo `labbprov-<användarnamn>` senast 14:00.** Lunchen 12–13 är paus, inte provtid – samarbetsförbudet gäller även då. Det som ligger där då är det som rättas; det spelar ingen roll hur många gånger du pushat innan. Tiden räknas från när GitHub tog emot pushen, inte från tiden på dina commits.
 - Repot ska vara **privat**, och `jonatanhallenberg` ska vara inbjuden (steg 2 under *Så får du provet*).
 - Committa i små steg medan du jobbar (t.ex. en commit per lagat fel). Det är din historik jag tittar på när jag frågar vad du gjorde.
 - I Canvas: lämna in **länken till ditt repo** som text i uppgiften *Labbprov 15/10*. Det är allt.
